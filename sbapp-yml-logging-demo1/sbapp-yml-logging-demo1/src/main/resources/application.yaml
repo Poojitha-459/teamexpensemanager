@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: sbapp-yml-logging-demo1
+  datasource:
+driver-class-name: com.mysql.cj.jdbc.Driver
+url: jdbc:mysql:localhost://3306/batch70
+username: root
+password: root
+jpa:
+hibernate:
+ddl-auto: update
+show-sql: true	
+server:
+port: 9966
+
+logging:
+level:
+root: DEBUG
+
+file:
+name: application.log
+pattern:
+console: -%d{yy-dd-MM HH:mm:ss} [%thread] %-5level %logger - %msg%n
